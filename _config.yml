@@ -1,0 +1,30 @@
+title: codegidovuivui
+lang: vi
+description: Code gì đó vui vui
+
+theme: null
+
+edit: true
+addons_branch: true
+
+addons: true
+
+copyright:
+  revision: true
+
+readme_index:
+  with_frontmatter: true
+
+sass:
+  style: compressed
+
+exclude:
+  - Makefile
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - deps.sh
+  - CODE_OF_CONDUCT.md
+  - LICENSE
+  - requirements.txt
+  - jekyll-rtd-theme.gemspec
