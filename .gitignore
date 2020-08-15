@@ -6,3 +6,6 @@ _site
 *.gem
 *.whl
 Gemfile.lock
+
+test
+test_long
