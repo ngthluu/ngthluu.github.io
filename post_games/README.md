@@ -2,6 +2,6 @@
 sort: 1
 ---
 
-# Code vài games
+# Games
 
 {% include list.liquid all=true %}

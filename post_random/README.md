@@ -2,6 +2,6 @@
 sort: 10
 ---
 
-# Chủ đề ngẫu nhiên
+# Random stuffs
 
 {% include list.liquid all=true %}

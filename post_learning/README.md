@@ -2,6 +2,6 @@
 sort: 3
 ---
 
-# Học hành là chuyện cả đời
+# Học hành
 
 {% include list.liquid all=true %}
