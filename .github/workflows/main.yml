@@ -1,77 +1,68 @@
-#!/bin/bash
-#
-# Deploy the content of _site to 'origin/<pages_branch>'
-#
-# v2.5
-# https://github.com/cotes2020/jekyll-theme-chirpy
-# © 2020 Cotes Chung
-# Published under MIT License
+name: 'Automatic build'
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - .gitignore
+      - README.md
+      - LICENSE
 
-set -eu
+jobs:
+  continuous-delivery:
 
-PAGES_BRANCH="gh-pages"
+    runs-on: ubuntu-latest
 
-_no_branch=false
-_backup_dir="$(mktemp -d)"
+    env:
+      GEMS_PATH: ~/vendor/bundle
 
-init() {
-  if [[ -z ${GITHUB_ACTION+x} ]]; then
-    echo "ERROR: This script is not allowed to run outside of GitHub Action."
-    exit -1
-  fi
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # for posts's lastmod
 
-  # Gemfile could be changed by `bundle install` in actions workflow
-  if [[ -n $(git status Gemfile.lock --porcelain) ]]; then
-    git checkout -- Gemfile.lock
-  fi
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.7
 
-  if [[ -z $(git branch -av | grep "$PAGES_BRANCH") ]]; then
-    _no_branch=true
-    git checkout -b "$PAGES_BRANCH"
-  else
-    git checkout "$PAGES_BRANCH"
-  fi
-}
+      - name: Bundle Caching
+        uses: actions/cache@v2
+        with:
+          path: ${{ env.GEMS_PATH }}
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
 
-backup() {
-  mv _site/* "$_backup_dir"
-  mv .git "$_backup_dir"
+      - name: Bundle Install
+        run: |
+          bundle config path ${{ env.GEMS_PATH }}
+          bundle install --jobs 4 --retry 3
 
-  # When adding custom domain from Github website,
-  # the CANME only exist on `gh-pages` branch
-  if [[ -f CNAME ]]; then
-    mv CNAME "$_backup_dir"
-  fi
-}
+      - name: Check baseurl
+        run: |
+          baseurl="$(grep '^baseurl:' _config.yml | sed "s/.*: *//;s/['\"]//g;s/#.*//")"
+          if [[ -n $baseurl ]]; then
+            echo "BASE_URL=$baseurl" >> $GITHUB_ENV
+          fi
 
-flush() {
-  rm -rf ./*
-  rm -rf .[^.] .??*
+      - name: Build Site
+        env:
+          JEKYLL_ENV: production
+        run: |
+          bundle exec jekyll b -d "_site$BASE_URL"
 
-  shopt -s dotglob nullglob
-  mv "$_backup_dir"/* .
-}
+      - name: Test Site
+        run: |
+          bash tools/test.sh
 
-deploy() {
-  git config --global user.name "GitHub Actions"
-  git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Deploy
+        run: |
+          if [[ -n $BASE_URL ]]; then
+            mv _site$BASE_URL _site-rename
+            rm -rf _site
+            mv _site-rename _site
+          fi
 
-  git update-ref -d HEAD
-  git add -A
-  git commit -m "[Automation] Site update No.${GITHUB_RUN_NUMBER}"
-
-  if $_no_branch; then
-    git push -u origin "$PAGES_BRANCH"
-  else
-    git push -f
-  fi
-}
-
-main() {
-  init
-  backup
-  flush
-  deploy
-}
-
-main
+          bash tools/deploy.sh
