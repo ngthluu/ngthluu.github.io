@@ -5,3 +5,6 @@
 # jekyll cache
 _site
 vendor
+
+# Other stuffs
+run.sh
