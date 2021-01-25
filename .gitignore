@@ -1,11 +1,7 @@
-.jekyll-metadata
+# hidden files
+.*
+!.github
+
+# jekyll cache
 _site
-.sass-cache
-
-*.html
-*.gem
-*.whl
-Gemfile.lock
-
-test
-test_long
+vendor
