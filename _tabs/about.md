@@ -9,7 +9,7 @@ order: 4
 # © 2017-2019 Cotes Chung
 # MIT License
 ---
-<img src="{{ site.avatar }}" width="100px" height="100px>
+<img src="{{ site.avatar }}" width="100px" height="100px">
 
 My name is **Nguyen Thanh Luu** (`@ngthluu`).
 
