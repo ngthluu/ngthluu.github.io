@@ -9,6 +9,12 @@ order: 4
 # © 2017-2019 Cotes Chung
 # MIT License
 ---
+![Avatar]({{ site.avatar }})
 
+My name is **Nguyen Thanh Luu** (`@ngthluu`).
 
-> **Note**: Add Markdown syntax content to file `_tabs/about.md` and it will show up on this page.
+Studying CS at HCMUT.
+
+A freelancer at web development.
+
+Follow me on [Twitter]({{ site.social.links[0] }}) and [Github]({{ site.social.links[1] }}).
