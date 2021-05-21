@@ -9,12 +9,14 @@ order: 4
 # © 2017-2019 Cotes Chung
 # MIT License
 ---
-<img src="{{ site.avatar }}" width="100px" height="100px">
+<img src="{{ site.avatar }}" width="100px" height="100px" class="rounded-circle">
 
-My name is **Nguyen Thanh Luu** (`@ngthluu`).
+My name is **Nguyen Thanh Luu** `@ngthluu`.
 
-Studying CS (3rd year) at HCMUT.
+From Dak To, Kon Tum, Viet Nam.
 
-A web developer and freelancer.
+**CS undergraduate** (3rd year) at [HCMUT](https://www.hcmut.edu.vn).
 
-Follow me on [Twitter]({{ site.social.links[0] }}) and [Github]({{ site.social.links[1] }}).
+**Backend developer** at [HECWIN](https://hecwin.com/).
+
+Follow me on [Github]({{ site.social.links[0] }}).

@@ -9,15 +9,15 @@
 # --------------------------
 title: Codegidovuivui                          # the main title
 
-tagline: Nothing special # it will display as the sub-title
+tagline: Simple makes perfect # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A blog about techs, side projects and other stuffs
+  My blog about techs, side projects and other stuffs
 
 # fill in the base hostname & protocol for your site, e.g., 'https://username.github.io'
 url: 'https://ngthluu.github.io'
 
-author: Luu nguyen                  # change to your full name
+author: Luu Nguyen                  # change to your full name
 
 avatar: /assets/img/avatar/avatar.png   # support internet resources
 
@@ -29,14 +29,10 @@ twitter:
 
 social:
   name: Luu Nguyen                  # it will shows as the copyright owner in Footer
-  email: luu.nguyen2101@hcmut.edu.vn             # change to your email address
+  email: nt.luu21@gmail.com            # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/ngthluu      # change to your twitter homepage
-    - https://github.com/ngthluu       # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://github.com/ngthluu
 
 google_site_verification: google_meta_tag_verification # change to your verification string
 # --------------------------

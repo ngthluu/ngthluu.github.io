@@ -50,6 +50,18 @@ html[mode=dark] {
   font-size: 16px;
 }
 
+/* scrollbar */
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+	background: #252525;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 3px;
+	background: #c0c0c0;
+}
+
 body {
   line-height: 1.75rem;
   background: var(--body-bg);
