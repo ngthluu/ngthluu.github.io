@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Galleries
-permalink: /galleries/
+permalink: /gallery/
 ---
 
 <ul>

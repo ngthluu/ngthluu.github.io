@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Journeys
-permalink: /journeys/
+permalink: /journey/
 ---
 
 <ul>

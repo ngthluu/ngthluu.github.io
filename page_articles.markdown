@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Articles
-permalink: /articles/
+permalink: /article/
 ---
 
 <ul>
