@@ -1,4 +1,8 @@
 ---
+title: Test article
+date: 2025-06-14
 layout: post
-tags: [article]
+categories: [article]
 ---
+
+Test article

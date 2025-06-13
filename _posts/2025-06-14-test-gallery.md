@@ -1,4 +1,8 @@
 ---
+title: Test gallery
+date: 2025-06-14
 layout: post
-tags: [gallery]
+categories: [gallery]
 ---
+
+Test gallery
