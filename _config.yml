@@ -21,11 +21,11 @@
 title: theshortjourney
 email: nguyenluu2101@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi, nice to meet you. My name's Luu. This is my personal blog.
+  Nice to meet you. Have a great day!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://theshortjourney.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: ngthluu
-lang: vi
+lang: en
 
 # Build settings
 theme: minima

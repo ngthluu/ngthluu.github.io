@@ -7,12 +7,14 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-        {%- include social.html -%}
+        <div>
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </div>
       </div>
     </div>
 
     <small class="copyright">
-      Copyright &copy; {{ site.time | date: "%Y" }} {{ site.title | escape }}. All rights reserved.
+      Copyright &copy; {{ site.time | date: "%Y" }} <strong>{{ site.title | escape }}</strong>. All rights reserved.
     </small>
   </div>
 
