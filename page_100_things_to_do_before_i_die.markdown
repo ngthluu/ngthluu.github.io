@@ -67,7 +67,7 @@ permalink: /100-things-to-do-before-i-die/
 - Participate in a Full Marathon
 - Be able to swim
 - Participate in an Ironman Triathlon
-- Maintain a muscular physique at 65 kg
+- [Maintain a muscular physique at 65 kg](/article/2025/06/16/my-diet-journey-in-2025)
 - Be able to do 100 consecutive push-ups
 - Be able to do 20 consecutive pull up
 - Be able to do muscle ups
