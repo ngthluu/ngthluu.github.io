@@ -45,7 +45,7 @@ permalink: /100-things-to-do-before-i-die/
 ## Knowledge & Skill
 
 - Get a master's degree abroad
-- Read 1000 books
+- [Read 1000 books](/article/2025/06/16/my-reading-list)
 - Be able to cook
 - Play guitar well
 - Be able to do basic first aid
