@@ -29,5 +29,8 @@ To lose about 1kg per week, I’ll keep my intake around 1,500 kcal per day. No 
 **Last year, I lost around 3kg per month. So if I stay on track, I should reach 65kg in about 5 months — around November this year.**
 
 Below is my daily tracking. I’ll update the progress every weekend, and my weight will be recorded on Sundays.
-1. 17/06/2025 (Tue): Run XXXkm. Followed diet.
-2. 22/06/2025 (Sun): Run XXXkm. Followed diet. **Weight: 79kg**
+1. 18/06/2025: Run 6,02km (1:00:58). Cheated 3-4 small snacks.
+2. 19/06/2025: Run 6,04km (52:42). Cheated 3-4 small snacks & 1 coconut milk coffee.
+3. 20/06/2025: Run 6,00km (57:39). Followed diet.
+4. 21/06/2025: Rest day. Followed diet.
+5. 22/06/2025 (Sun) **78kg**: Play badminton. Followed diet.
