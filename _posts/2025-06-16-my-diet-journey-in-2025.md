@@ -34,3 +34,6 @@ Below is my daily tracking. I’ll update the progress every weekend, and my wei
 3. 20/06/2025: Run 6,00km (57:39). Followed diet.
 4. 21/06/2025: Rest day. Followed diet.
 5. 22/06/2025 (Sun) **78kg**: Play badminton. Followed diet.
+6. **23/06/2025 - 09/07/2025: DO NOT TRAIN (FEELS SO BAD)**
+7. 10/07/2025: Weight training & Followed diet. Weight: **80kg**
+8. **11/07/2025: DO NOT TRAIN**
